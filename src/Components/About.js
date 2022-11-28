@@ -21,14 +21,10 @@ class About extends Component {
         <Fade duration={1000}>
           <div className="row">
             <div className="three columns">
-              <img
-                className="profile-pic"
-                src={profilepic}
-                alt="Nordic Giant Profile Pic"
-              />
+            
             </div>
             <div className="nine columns main-col">
-              <h2>About Me</h2>
+              <h2>Branding</h2>
 
               <p>{bio}</p>
               <div className="row">
@@ -51,7 +47,7 @@ class About extends Component {
                 <div className="columns download">
                   <p>
                     <a href={resumeDownload} className="button">
-                      <i className="fa fa-download"></i>Download Resume
+                      <i className="fa fa-download"></i>Download Branding Assets
                     </a>
                   </p>
                 </div>

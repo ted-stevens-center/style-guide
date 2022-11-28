@@ -5,9 +5,9 @@ import "./App.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
-import Resume from "./Components/Resume";
+import Logo from "./Components/Logo";
 import Contact from "./Components/Contact";
-import Portfolio from "./Components/Portfolio";
+import ColorPalette from "./Components/ColorPalette";
 
 class App extends Component {
   constructor(props) {
@@ -45,8 +45,8 @@ class App extends Component {
       <div className="App">
         <Header data={this.state.resumeData.main} />
         <About data={this.state.resumeData.main} />
-        <Resume data={this.state.resumeData.resume} />
-        <Portfolio data={this.state.resumeData.portfolio} />
+        <Logo data={this.state.resumeData.logo} />
+        <ColorPalette data={this.state.resumeData.colorPalette} />
         <Contact data={this.state.resumeData.main} />
         <Footer data={this.state.resumeData.main} />
       </div>

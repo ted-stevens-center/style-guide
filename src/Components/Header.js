@@ -1,6 +1,24 @@
 import React, { Component } from "react";
-import ParticlesBg from "particles-bg";
 import Fade from "react-reveal";
+import styled from 'styled-components';
+
+const BkImage = styled.div`
+    background-image: url(images/northern_lights_bg2.jpeg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+`;
+
+const Hide = styled.div`
+display: none;
+`;
+
+const StyledHeader = styled.header`
+height: 100vh;
+`;
 
 class Header extends Component {
   render() {
@@ -12,9 +30,8 @@ class Header extends Component {
     const description = this.props.data.description;
 
     return (
-      <header id="home">
-        <ParticlesBg type="circle" bg={true} />
-
+      <StyledHeader id="home">
+        <BkImage></BkImage>
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
@@ -29,28 +46,33 @@ class Header extends Component {
                 Home
               </a>
             </li>
-
             <li>
               <a className="smoothscroll" href="#about">
-                About
+                Assets
+              </a>
+            </li>
+
+            <li>
+              <a className="smoothscroll" href="#logo">
+                Logo
               </a>
             </li>
 
             <li>
               <a className="smoothscroll" href="#resume">
-                Resume
+                Color Palette
               </a>
             </li>
 
             <li>
               <a className="smoothscroll" href="#portfolio">
-                Works
+                Icons
               </a>
             </li>
 
             <li>
               <a className="smoothscroll" href="#contact">
-                Contact
+                Forms
               </a>
             </li>
           </ul>
@@ -65,6 +87,7 @@ class Header extends Component {
               <h3>{description}.</h3>
             </Fade>
             <hr />
+            <Hide>
             <Fade bottom duration={2000}>
               <ul className="social">
                 <a href={project} className="button btn project-btn">
@@ -75,6 +98,7 @@ class Header extends Component {
                 </a>
               </ul>
             </Fade>
+            </Hide>
           </div>
         </div>
 
@@ -83,7 +107,7 @@ class Header extends Component {
             <i className="icon-down-circle"></i>
           </a>
         </p>
-      </header>
+      </StyledHeader>
     );
   }
 }

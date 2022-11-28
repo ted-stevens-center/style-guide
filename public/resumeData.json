@@ -1,7 +1,7 @@
 {
   "main": {
-    "name":"Nordic-Giant Project",
-    "description":"I am a web development engineer and I use react and vue.js to develop pages. This project is a resume template that can be used as the project home page or resume page",
+    "name":"Style Guide",
+    "description":"For The Ted Stevens Center for Arctic Security Studies",
     "image":"profilepic.jpg",
     "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
@@ -16,7 +16,7 @@
       "zip": "(Your Zip/Postal Code)"
     },
     "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "resumedownload":"/assets/assets.zip",
     "social":[
       {
         "name":"facebook",
@@ -45,68 +45,82 @@
       }
     ]
   },
-  "resume":{
+  "logo":{
     "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
-    "education":[
+    "main":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2017",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "url":"images/logos/TSC_logo_color.svg?",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2013",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "url": "images/logos/TSC_logo_color.svg?",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "url": "images/logos/TSC_logo_color.svg?",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
     ],
-    "work":[
+    "horizontal":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2018 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "url": "images/logos/TSC_logo_color.svg?",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2017 - February 2018",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
-      }
-    ],
-    "skills":[
-      {
-        "name":"Python",
-        "level":"60%"
+        "url": "images/logos/TSC_logo_color.svg?",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       },
       {
-        "name":"VueJs",
-        "level":"55%"
-      },
-      {
-        "name":"ReactJs",
-        "level":"50%"
-      },
-      {
-        "name":"CSS",
-        "level":"90%"
-      },
-      {
-        "name":"PHP",
-        "level":"80%"
-      },
-      {
-        "name":"Swift",
-        "level":"50%"
-      },
-      {
-        "name":"JAVA",
-        "level":"80%"
+        "url": "images/logos/TSC_logo_color.svg?",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       }
     ]
   },
-  "portfolio":{
+  "colorPalette": {
+    "primaryText": "Tone and shade To be used for design objects and background gradient, tint to be used on objects with a higher z-index, ex: cards, chips, design elements used to create a sense of depth above background.",
+    "primary": [
+      {
+        "hex": "#0F3D4B",
+        "rgb": "5,61,75"
+      },
+      {
+        "hex": "#072633",
+        "rgb": "7,38,51"
+      },
+      {
+        "hex": "#0C3352",
+        "rgb": "12,51,82"
+      }
+    ],
+    "accentsText": "Highlight important objects, calls to action, links, buttons. Not to be used for copy or headline text, card titles, or navigation. Not to be used on light or highly saturated images without dark base background object. ",
+    "accents": [
+      {
+        "hex": "#01BACB",
+        "rgb": "1,186,203"
+      },
+      {
+        "hex": "#348063",
+        "rgb": "52,128,99"
+      }
+    ],
+        "tintsShadesText": "Tint and tone to be used for copy or headline text, card titles, or navigation. Not to be used on light or highly saturated images without shade base background object. H hierarchy when both are used in conjuction and are visually close should use #f2f2f2 for H level that is higher ex: H1 -> #f2f2f2, H2 -> c5c5c5. Shade is to create depth, veither in background or on objects that are placed over images. ",
+    "tintsShades": [
+      {
+        "hex": "#f2f2f2",
+        "rgb": "242,242,242"
+      },
+      {
+        "hex": "#c5c5c5",
+        "rgb": "197,197,197%"
+      },
+      {
+        "hex": "#0d0d0d",
+        "rgb": "16,16,16"
+      }
+    ]
+  },
+    
+  "icons":{
     "projects": [
       {
         "title":"Canadian Wanderlust",
