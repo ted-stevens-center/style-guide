@@ -21,7 +21,7 @@ const H1Span = styled.h1`
 span {
 font-size: 24px !important;
 padding-bottom: 3px;
-border-bottom: 3px solid #0F3D4B !important;
+border-bottom: 3px solid #01BACB;
 }
 `;
 
@@ -79,15 +79,16 @@ font-family: "bierstadt-bold", sans-serif;
 margin-bottom: 10px;`;
 
 const FontSection = styled.div`
-margin-bottom: 7rem;
+margin-top: 7rem;
 > div {
   margin-bottom: 25px;
 }
 `
 
 const FontWrapper = styled.section`
-background-color: #ffffff;
-padding-bottom: 40px;
+background-color: #072633;
+padding:40px 0;
+
 span:first-child {
   text-transform: uppercase;
   display: inline-block;
@@ -103,6 +104,7 @@ h1,h2,h3,h4,h5, p, span, figcaption, em {
   display: inline-block;
   width: 90%;
   float: left;
+  color: #f2f2f2;
 }
 ${StyledH1}{
 font-size: max(3.44rem, 48px);
@@ -141,6 +143,31 @@ font-size: max(.9rem, 13px);
 font-weight: regular;
 letter-spacing: 1px;
 text-transform: uppercase;
+margin-bottom: 20px;
+} 
+${StyledP}{
+font-size: max(.9rem, 13px);
+font-weight: regular;
+letter-spacing: 1px;
+margin-bottom: 20px;
+} 
+${StyledSpan}{
+font-size: max(.9rem, 12px);
+font-weight: regular;
+letter-spacing: 1px;
+margin-bottom: 20px;
+} 
+${StyledFigcaption}{
+font-size: max(.625rem, 10px);
+font-weight: regular;
+letter-spacing: 1px;
+margin-bottom: 20px;
+} 
+${StyledEm}{
+font-size: max(.625rem, 10px);
+font-weight: regular;
+letter-spacing: 1px;
+font-style: italic;
 margin-bottom: 20px;
 } 
 `;
@@ -240,18 +267,18 @@ class Fonts extends Component {
             <Slide left duration={1300}>
               <HeadingContainer>
                 <span>{this.props.data.paragraph.figcaption.p}</span>
-                <StyledSpan>
+                <StyledFigcaption>
                   {this.props.data.paragraph.figcaption.font}
-                </StyledSpan>
+                </StyledFigcaption>
               </HeadingContainer>
             </Slide>
 
             <Slide left duration={1300}>
               <HeadingContainer>
                 <span>{this.props.data.paragraph.em.p}</span>
-                <StyledSpan>
+                <StyledEm>
                   {this.props.data.paragraph.em.font}
-                </StyledSpan>
+                </StyledEm>
               </HeadingContainer>
             </Slide>
           </div>

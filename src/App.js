@@ -8,6 +8,7 @@ import About from "./Components/About";
 import Logo from "./Components/Logo";
 import Contact from "./Components/Contact";
 import ColorPalette from "./Components/ColorPalette";
+import Buttons from "./Components/Buttons";
 import Fonts from "./Components/Fonts";
 
 class App extends Component {
@@ -49,6 +50,7 @@ class App extends Component {
         <Logo data={this.state.data.logo} />
         <ColorPalette data={this.state.data.colorPalette} />
         <Fonts data={this.state.data.fonts} />
+        <Buttons />
         <Contact data={this.state.data.main} />
         <Footer data={this.state.data.main} />
       </div>

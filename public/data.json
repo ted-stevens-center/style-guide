@@ -103,7 +103,7 @@
         "rgb": "52,128,99"
       }
     ],
-        "tintsShadesText": "Tint and tone to be used for copy or headline text, card titles, or navigation. Not to be used on light or highly saturated images without shade base background object. H hierarchy when both are used in conjuction and are visually close should use #f2f2f2 for H level that is higher ex: H1 -> #f2f2f2, H2 -> c5c5c5. Shade is to create depth, veither in background or on objects that are placed over images. ",
+        "tintsShadesText": "Tint and tone to be used for copy or headline text, card titles, or navigation. Not to be used on light or highly saturated images without shade base background object. H hierarchy when both are used in conjuction and are visually close should use #f2f2f2 for H level that is higher ex: H1 -> #f2f2f2, H2 -> c5c5c5. Shade is to create depth, either in background or on objects that are placed over images.",
     "tintsShades": [
       {
         "hex": "#f2f2f2",
@@ -111,7 +111,7 @@
       },
       {
         "hex": "#c5c5c5",
-        "rgb": "197,197,197%"
+        "rgb": "197,197,197"
       },
       {
         "hex": "#0d0d0d",

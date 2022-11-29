@@ -4,6 +4,12 @@ import styled from 'styled-components';
 import {Row, Col} from 'react-bootstrap';
 
 
+const ColorPaletteWrapper = styled.section`
+background-color: #ffffff;
+padding-top: 7rem;
+padding-bottom: 7rem;
+`
+
 const Color = styled.div`
 background-color: ${props => props.colorsHex};
 width: 10rem;
@@ -22,7 +28,7 @@ const H1Span = styled.h1`
 span {
 font-size: 24px !important;
 padding-bottom: 3px;
-border-bottom: 3px solid #0F3D4B !important;
+  border-bottom: 3px solid #01BACB;
 }
 `;
 
@@ -71,10 +77,10 @@ class ColorPalette extends Component {
         <ColorWrapper className="four columns">
           <Color colorsHex={colors.hex}></Color>
           <ColorRow className="row">
-            {colors.hex}
+            hex code: {colors.hex}
           </ColorRow>
           <ColorRow className="row">
-            {colors.rgb}
+            rgb: ({colors.rgb})
           </ColorRow>
         </ColorWrapper>
       );
@@ -86,10 +92,10 @@ class ColorPalette extends Component {
         <ColorWrapper className="six columns">
           <Color colorsHex={colors.hex}></Color>
           <ColorRow className="row">
-            {colors.hex}
+            hex code: {colors.hex}
           </ColorRow>
           <ColorRow className="row">
-            {colors.rgb}
+            rgb: ({colors.rgb})
           </ColorRow>
         </ColorWrapper>
       );
@@ -101,17 +107,17 @@ class ColorPalette extends Component {
         <ColorWrapper className="four columns">
           <Color colorsHex={colors.hex}></Color>
           <ColorRow className="row">
-            {colors.hex}
+            hex code: {colors.hex}
           </ColorRow>
           <ColorRow className="row">
-            {colors.rgb}
+            rgb: ({colors.rgb})
           </ColorRow>
         </ColorWrapper>
       );
     });
 
     return (
-      <section id="resume">
+      <ColorPaletteWrapper id="colorPalette">
         <ColorSection className="row ">
           <div className="five columns header-col">
             <H1Span>
@@ -187,7 +193,7 @@ class ColorPalette extends Component {
             </div>
           </ColorSection>
         </Slide>
-      </section>
+      </ColorPaletteWrapper>
     );
   }
 }
