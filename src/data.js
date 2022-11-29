@@ -1,4 +1,4 @@
-{
+const data = {
   "main": {
     "name":"Style Guide",
     "description":"For The Ted Stevens Center for Arctic Security Studies",
@@ -241,3 +241,6 @@
     ]
   }
 }
+
+export default data;
+

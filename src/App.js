@@ -10,6 +10,7 @@ import Contact from "./Components/Contact";
 import ColorPalette from "./Components/ColorPalette";
 import Buttons from "./Components/Buttons";
 import Fonts from "./Components/Fonts";
+import data from "./data.js"
 
 class App extends Component {
   constructor(props) {
@@ -23,23 +24,10 @@ class App extends Component {
     ReactGA.pageview(window.location.pathname);
   }
 
-  getResumeData() {
-    $.ajax({
-      url: "./data.json",
-      dataType: "json",
-      cache: false,
-      success: function(data) {
-        this.setState({ data: data });
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.log(err);
-        alert(err);
-      }
-    });
-  }
+
 
   componentDidMount() {
-    this.getResumeData();
+    this.setState({ data: data });
   }
 
   render() {
