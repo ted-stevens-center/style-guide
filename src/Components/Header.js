@@ -59,13 +59,13 @@ class Header extends Component {
             </li>
 
             <li>
-              <a className="smoothscroll" href="#resume">
+              <a className="smoothscroll" href="#colorPalette">
                 Color Palette
               </a>
             </li>
 
             <li>
-              <a className="smoothscroll" href="#portfolio">
+              <a className="smoothscroll" href="#fonts">
                 Icons
               </a>
             </li>

@@ -138,6 +138,33 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'bierstadt-regular';
+    src: url('fonts/bierstadt/bierstadt-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bierstadt-italic';
+    src: url('fonts/bierstadt/bierstadt-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'bierstadt-bold';
+    src: url('fonts/bierstadt/bierstadt-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bierstadt-bold-italic';
+    src: url('fonts/bierstadt/bierstadt-bold-italic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
 
 /*
  * FIXED for Font-Face Chrome Rendering
