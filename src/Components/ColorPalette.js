@@ -9,6 +9,7 @@ background-color: ${props => props.colorsHex};
 width: 10rem;
 height: 10rem;
 border-radius: 100%;
+padding-left: 0;
 `;
 
 const H3Span = styled.h3`
@@ -26,12 +27,31 @@ border-bottom: 3px solid #0F3D4B !important;
 `;
 
 const ColorRow = styled.div`
-padding-left: 0 !important;
+padding-left: 20px !important;
 padding-top: 10px !important;
 &:last-child {
   margin-bottom: 25px !important;
 
 }
+`;
+
+const ColorCol = styled.div`
+&:first-child {
+  padding-left: 35px;
+}
+`;
+
+const ColorSection = styled.div`
+margin-bottom: 7rem;`;
+
+const Text = styled.p`
+font-size: 1.5rem;
+line-height: 2.25rem;
+color: rgba(0,0,0, 0.4);
+`;
+
+const ColorWrapper = styled.div`
+padding-left: 0 !important;
 `;
 
 class ColorPalette extends Component {
@@ -48,7 +68,7 @@ class ColorPalette extends Component {
     const primary = this.props.data.primary.map((colors) => {
       
       return (
-        <div className="four columns">
+        <ColorWrapper className="four columns">
           <Color colorsHex={colors.hex}></Color>
           <ColorRow className="row">
             {colors.hex}
@@ -56,14 +76,14 @@ class ColorPalette extends Component {
           <ColorRow className="row">
             {colors.rgb}
           </ColorRow>
-        </div>
+        </ColorWrapper>
       );
     });
 
     const accents = this.props.data.accents.map((colors) => {
 
       return (
-        <div className="six columns">
+        <ColorWrapper className="six columns">
           <Color colorsHex={colors.hex}></Color>
           <ColorRow className="row">
             {colors.hex}
@@ -71,14 +91,14 @@ class ColorPalette extends Component {
           <ColorRow className="row">
             {colors.rgb}
           </ColorRow>
-        </div>
+        </ColorWrapper>
       );
     });
 
     const tintsShades = this.props.data.tintsShades.map((colors) => {
 
       return (
-        <div className="four columns">
+        <ColorWrapper className="four columns">
           <Color colorsHex={colors.hex}></Color>
           <ColorRow className="row">
             {colors.hex}
@@ -86,13 +106,13 @@ class ColorPalette extends Component {
           <ColorRow className="row">
             {colors.rgb}
           </ColorRow>
-        </div>
+        </ColorWrapper>
       );
     });
 
     return (
       <section id="resume">
-        <div className="row ">
+        <ColorSection className="row ">
           <div className="five columns header-col">
             <H1Span>
               <span>Color Palette</span>
@@ -101,70 +121,71 @@ class ColorPalette extends Component {
         </div>
           <div className="seven columns header-col">
           </div>
-        </div>
+        </ColorSection>
               
 
         <Slide left duration={1300}>
-          <div className="row skill">
+          <ColorSection className="row skill">
             <div className="five columns header-col">
               <H3Span>
                 <span>Primary</span>
               </H3Span>
-              <div className="row">
-                {tintsShadesText}
-              </div>
+              <Text>
+                {primaryText}
+              </Text>
             </div>
 
             <div className="seven columns main-col">
               
 
-              <Row>
+              <ColorCol>
                 <Row>{primary}</Row>
-              </Row>
+              </ColorCol>
             </div>
-          </div>
+          </ColorSection>
         </Slide>
 
         <Slide left duration={1300}>
-          <div className="row skill">
+          <ColorSection className="row skill">
             <div className="five columns header-col">
               <H3Span>
                 <span>Accent</span>
               </H3Span>
-              <div className="row">
+              <Text >
                 {accentsText}
-              </div>
+              </Text>
             </div>
 
             <div className="seven columns main-col">
 
 
-              <Row>
+              <ColorCol>
                 <Row>{accents}</Row>
-              </Row>
+              </ColorCol>
             </div>
-          </div>
+          </ColorSection>
         </Slide>
 
         <Slide left duration={1300}>
-          <div className="row skill">
+          <ColorSection className="row skill">
             <div className="five columns header-col">
               <H3Span>
                 <span>Tint & Shade</span>
               </H3Span>
-              <div className="row">
+              <Text >
                 {tintsShadesText}
-              </div>
+              </Text>
             </div>
+            
 
             <div className="seven columns main-col">
 
 
-              <Row>
+              <ColorCol>
                 <Row>{tintsShades}</Row>
-              </Row>
+              </ColorCol>
             </div>
-          </div>
+          </ColorSection>
         </Slide>
       </section>
     );
