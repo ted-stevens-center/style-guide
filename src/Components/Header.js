@@ -3,7 +3,7 @@ import Fade from "react-reveal";
 import styled from 'styled-components';
 
 const BkImage = styled.div`
-    background-image: url(images/northern_lights_bg2.jpeg);
+    background-image: url(/images/northern_lights_bg2.jpeg);
     background-size: cover;
     width: 100vw;
     height: 100vh;

@@ -97,7 +97,7 @@ class Logo extends Component {
           </div>
         </Slide>
 
-        <Slide left duration={1300}>
+        {/* <Slide left duration={1300}>
             <div className="row work parent">
             <div className="three columns header-col">
               <h1>
@@ -107,7 +107,7 @@ class Logo extends Component {
 
             <div className="nine columns main-col">{horizontal}</div>
           </div>
-        </Slide>
+        </Slide> */}
 
       </LogoSection>
     );

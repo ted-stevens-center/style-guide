@@ -107,20 +107,20 @@ h1,h2,h3,h4,h5, p, span, figcaption, em {
   color: #f2f2f2;
 }
 ${StyledH1}{
-font-size: max(3.44rem, 48px);
+font-size: max(3.44rem, 40px);
 font-weight: bold;
 letter-spacing: 1.36px;
 text-transform: uppercase;
-line-height: 5rem;
+line-height: auto;
 margin-bottom: 20px;
 } 
 
 ${StyledH2}{
-font-size: max(1.25rem, 20px);
+font-size: max(1.25rem, 32px);
 font-weight: regular;
 letter-spacing: 2px;
 text-transform: uppercase;
-line-height: 2.25rem;
+line-height: auto;
 margin-bottom: 20px;
 } 
 ${StyledH3}{

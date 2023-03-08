@@ -6,29 +6,70 @@ import { Row, Col } from 'react-bootstrap';
 const ButtonsWrapper = styled.section`
 padding-top: 7rem;
 padding-bottom: 7rem;
-background-color: #0C3352;
+background-color: #c5c5c5;
 `;
 
-const ButtonPrimary = styled.button`
-border: 1.5px solid #f2f2f2;
-box-shadow: 2px 2px 2px rgba(16,16,16, 1);
-padding: .75rem 1.75rem;
-border-radius: 11px;
-font-size: max(1.25rem, 16px);
-font-weight: regular;
-letter-spacing: 1px;
-text-transform: uppercase;
-background-color: transparent;
-transition: box-shadow .5s ease-in, border 300ms ease-out, color 300ms ease-in, text-shadow 300ms ease-in;
-&:hover, &:active {
-    border: 1.5px solid rgba(1,186,203, 1);
-    box-shadow: 0 0 10px rgba(1,186,203, 1);
-    background-color: transparent;
-    color:  rgba(1,186,203, 1);
-    text-shadow: 2px 2px rgba(16,16,16,1);
-}
+const ButtonCol = styled.div`
+display: inline-flex;
+width: 50%;
+`
 
-	
+const ButtonPrimary = styled.button`
+margin-left: 0;
+border-radius: 0;
+background-color: #0b3d4c;
+border: 0;
+width: 142px;
+height: 50px;
+display: flex;
+line-height: 28px;
+font-size: 14px;
+color: #f2f2f2;
+font-weight: 700;
+text-decoration: none;
+text-transform: uppercase;
+align-content: center;
+justify-content: center;
+opacity: 1;
+will-change: transform;
+transition: box-shadow,background-color .5s linear;
+&:hover, &:active {
+   will-change: transform;
+    cursor: pointer;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgb(0 0 0 / 30%);
+    background-color: #01bacb;
+}	
+`;
+
+const ButtonSecondary = styled.a`
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #f2f2f2;
+    margin: 0 25px;
+    width: fit-content;
+    display: block;
+        &:after {
+        content: "";
+        height: 1px;
+        display: block;
+        position: relative;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 0;
+        background: #f2f2f2;
+        transition: width 1s;
+        }
+        &:hover {
+            color: #f2f2f2;
+            cursor: pointer;
+            &:after {
+                width: 100%;
+            }
+        }
+   
 `;
 
 class Buttons extends Component {
@@ -42,7 +83,8 @@ class Buttons extends Component {
                     <div  className="six columns header-col">
                         <Slide left duration={1300}>
                             <Row>
-                                <ButtonPrimary>Learn More</ButtonPrimary>
+                                <ButtonCol ><ButtonPrimary>Learn More</ButtonPrimary></ButtonCol>
+                                <ButtonCol ><ButtonSecondary>Read More</ButtonSecondary></ButtonCol>
                             </Row>
                         </Slide>
 

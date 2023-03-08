@@ -29,7 +29,7 @@ class About extends Component {
               <p>{bio}</p>
               <div className="row">
                 <div className="columns contact-details">
-                  <h2>Contact Details</h2>
+                  {/* <h2>Contact Details</h2>
                   <p className="address">
                     <span>{name}</span>
                     <br />
@@ -42,7 +42,7 @@ class About extends Component {
                     <span>{phone}</span>
                     <br />
                     <span>{email}</span>
-                  </p>
+                  </p> */}
                 </div>
                 <div className="columns download">
                   <p>

@@ -16,7 +16,7 @@ const data = {
       "zip": "(Your Zip/Postal Code)"
     },
     "website": "http://www.timbakerdev.com",
-    "resumedownload":"/assets/assets.zip",
+    "resumedownload":"/TSC-Style-Guide/assets/assets.zip",
     "social":[
       {
         "name":"facebook",
@@ -50,15 +50,15 @@ const data = {
     "main":[
       {
         "url":"images/logos/TSC_logo_color.svg?",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Logo image full color, to be used as primary logo. To be used in all color marketing collateral and digital presentations."
       },
       {
         "url": "images/logos/TSC_logo_white.svg?",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Logo, white. To be used in marketing collateral that is dark and where color considerations are not possible."
       },
       {
         "url": "images/logos/TSC_logo_black.svg?",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Logo, black. To be used in marketing collateral that is light and where color considerations are not possible."
       }
     ],
     "horizontal":[
@@ -124,11 +124,11 @@ const data = {
     "heading": {
       "h1": {
         "h": "H1",
-        "font": "Bierstadt: weight: bold, Size: 48px / 3.44rem, letter-spacing: 1.36px, line-height: auto"
+        "font": "Bierstadt: weight: bold, Size: 40px / 2.5rem, letter-spacing: 1.36px, line-height: auto"
       },
       "h2": {
         "h": "H2",
-        "font": "Bierstadt: weight: regular, Size: 20px / 1.25rem, letter-spacing: 2px, line-height: auto"
+        "font": "Bierstadt: weight: regular, Size: 32px, letter-spacing: 2px, line-height: auto"
       },
       "h3": {
         "h": "H3",
