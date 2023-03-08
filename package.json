@@ -54,11 +54,11 @@
   "devDependencies": {
     "chokidar": "^3.5.1"
   },
-  "description": "### [LIVE DEMO](https://martin-kennedy.github.io/Style-Guide-Master//index.html)",
+  "description": "### [LIVE DEMO](https://ted-stevens-center.github.io/style-guide///index.html)",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Martin-Kennedy/style-guide-master.git"
+    "url": "git+https://ted-stevens-center.github.io/style-guide/"
   },
   "keywords": [
     "style",
